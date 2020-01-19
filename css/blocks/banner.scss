@@ -1,0 +1,47 @@
+.container--banner {
+  width: 821px;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.banner__avatar {
+  width: 48%;
+}
+
+.banner__img {
+  position: relative;
+  max-width: 400px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 451px;
+    height: 241px;
+    left: -23px;
+    top: 65px;
+    background: url(../../img/decor/drops.png) center center no-repeat;
+  }
+}
+
+.banner__info {
+  width: 48%;
+  padding-top: 90px;
+}
+
+.banner__title {
+  font-family: gagalin_regular;
+  font-size: 72px;
+  color: $orange-text;
+}
+
+.banner__desc {
+  color: #fff;
+  font-size: 65px;
+  font-family: lifehack_medium;
+  line-height: 1.21;;
+}

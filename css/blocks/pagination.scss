@@ -1,0 +1,46 @@
+.pagination {
+  position: absolute;
+  top: 110px;
+  right: 160px;
+}
+
+.pagination__item {
+  margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.pagination__item--active .pagination__link {
+  border-color: #fff;
+}
+
+.pagination__link {
+  position: relative;
+  display: block;
+  width: 14px;
+  height: 14px;
+
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  transition: border-color .3s;
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 6px;
+    height: 6px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  &:hover {
+    border-color: #fff;
+  }
+}
