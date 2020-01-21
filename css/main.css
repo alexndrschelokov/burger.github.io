@@ -460,13 +460,17 @@ a {
 
 /*block*/
 .section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .hero {
   position: relative;
-  background: url(../../img/decor/hello.jpg) center center/cover no-repeat;
+  background: url(../../img/bg/hero.jpg) center center/cover no-repeat;
 }
 
 .hero__container {
@@ -579,14 +583,6 @@ a {
   margin-left: 20px;
 }
 
-.banner__title {
-  margin-bottom: 45px;
-  font-family: gagalin_regular;
-  font-size: 72px;
-  color: #f9b43b;
-  line-height: 1;
-}
-
 .banner__desc {
   color: #fff;
   font-size: 55px;
@@ -594,10 +590,27 @@ a {
   line-height: 1;
 }
 
+.title {
+  margin-bottom: 50px;
+  font-family: gagalin_regular;
+  font-size: 72px;
+  color: #f9b43b;
+  line-height: 1;
+}
+
+.title--color--black {
+  color: #2f3234;
+}
+
+.title--centered {
+  text-align: center;
+}
+
 .pagination {
-  position: absolute;
-  top: 110px;
-  right: 160px;
+  position: fixed;
+  top: 95px;
+  right: 53px;
+  z-index: 100;
 }
 
 .pagination__item {
@@ -646,5 +659,43 @@ a {
   transform: translateX(-50%);
   bottom: 40px;
   outline: none;
+}
+
+.best {
+  background: url(../../img/bg/best.jpg) center center/cover no-repeat;
+}
+
+.best__list {
+  display: flex;
+}
+
+.best__item {
+  flex: 1;
+  margin-right: 35px;
+  text-align: center;
+}
+.best__item:last-child {
+  margin-right: 0;
+}
+
+.best__img {
+  display: inline-block;
+  margin-bottom: 13px;
+}
+
+.best__img-pic {
+  display: block;
+  max-width: 100%;
+}
+
+.best__title {
+  margin-bottom: 10px;
+  font-family: lifehack_medium;
+  font-size: 24px;
+  color: #2f3234;
+}
+
+.best__desc p {
+  font-family: ubuntu_light;
 }
 /*# sourceMappingURL=main.css.map */

@@ -6,6 +6,9 @@
 
 $orange: #e45028;
 $orange-text: #f9b43b;
+$black: #2f3234;
+
+$z-index-pagination: 100;
 
 @import "./blocks/section";
 @import "./blocks/hero";
@@ -14,5 +17,7 @@ $orange-text: #f9b43b;
 @import "./blocks/menu";
 @import "./blocks/button";
 @import "./blocks/banner";
+@import "./blocks/title";
 @import "./blocks/pagination";
 @import "./blocks/scroll-down-btn";
+@import "./blocks/best";
