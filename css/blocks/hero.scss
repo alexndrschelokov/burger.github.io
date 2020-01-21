@@ -1,4 +1,8 @@
-.hello {
+.hero {
   position: relative;
   background: url(../../img/decor/hello.jpg) center center / cover no-repeat;
+}
+
+.hero__container {
+  height: 100%;
 }

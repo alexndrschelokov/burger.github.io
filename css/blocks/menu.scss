@@ -6,7 +6,7 @@
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 36px;
+  margin-right: 18px;
 
   &:before {
     content: '';
@@ -17,7 +17,7 @@
     right: 100%;
     top: 50%;
     transform: translateY(-50%);
-    margin-right: 18px;
+    margin-right: 10px;
     
     border-radius: 50%;
     background: #fff;

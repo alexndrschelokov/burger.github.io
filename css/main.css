@@ -444,6 +444,8 @@ a {
 .container {
   width: 940px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .visyallyHidden {
@@ -462,19 +464,25 @@ a {
   height: 100vh;
 }
 
-.hello {
+.hero {
   position: relative;
   background: url(../../img/decor/hello.jpg) center center/cover no-repeat;
 }
 
-.container--header {
+.hero__container {
+  height: 100%;
+}
+
+.header {
+  padding: 12px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header {
-  padding: 12px 0;
+.header__buttons {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -496,7 +504,7 @@ a {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 36px;
+  margin-right: 18px;
 }
 .menu__item:before {
   content: "";
@@ -507,7 +515,7 @@ a {
   right: 100%;
   top: 50%;
   transform: translateY(-50%);
-  margin-right: 18px;
+  margin-right: 10px;
   border-radius: 50%;
   background: #fff;
 }
@@ -544,18 +552,10 @@ a {
   background: #d7431b;
 }
 
-.container--banner {
-  width: 821px;
-}
-
 .banner {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.banner__avatar {
-  width: 48%;
+  align-items: center;
+  flex: 0.775;
 }
 
 .banner__img {
@@ -568,27 +568,30 @@ a {
   display: block;
   width: 451px;
   height: 241px;
-  left: -23px;
+  left: -30px;
   top: 65px;
   background: url(../../img/decor/drops.png) center center no-repeat;
+  transform: scale(0.95);
 }
 
 .banner__info {
-  width: 48%;
-  padding-top: 90px;
+  padding-top: 92px;
+  margin-left: 20px;
 }
 
 .banner__title {
+  margin-bottom: 45px;
   font-family: gagalin_regular;
   font-size: 72px;
   color: #f9b43b;
+  line-height: 1;
 }
 
 .banner__desc {
   color: #fff;
-  font-size: 65px;
+  font-size: 55px;
   font-family: lifehack_medium;
-  line-height: 1.21;
+  line-height: 1;
 }
 
 .pagination {
@@ -633,11 +636,15 @@ a {
   border-color: #fff;
 }
 
-.next {
+.scroll-down-btn {
   display: block;
-  padding: 5px;
   position: absolute;
+  width: 29px;
+  height: 14px;
+  background: url(../../img/icons/scroll-down-btn.png) center center/contain no-repeat;
   left: 50%;
   transform: translateX(-50%);
   bottom: 40px;
+  outline: none;
 }
+/*# sourceMappingURL=main.css.map */

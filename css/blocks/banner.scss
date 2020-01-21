@@ -1,15 +1,11 @@
-.container--banner {
-  width: 821px;
-}
-
 .banner {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  flex: 0.775;
 }
 
 .banner__avatar {
-  width: 48%;
+  // width: 48%;
 }
 
 .banner__img {
@@ -22,26 +18,30 @@
     display: block;
     width: 451px;
     height: 241px;
-    left: -23px;
+    left: -30px;
     top: 65px;
     background: url(../../img/decor/drops.png) center center no-repeat;
+    transform: scale(.95);
   }
 }
 
 .banner__info {
-  width: 48%;
-  padding-top: 90px;
+  padding-top: 92px;
+  margin-left: 20px;
 }
 
 .banner__title {
+  margin-bottom: 45px;
+
   font-family: gagalin_regular;
   font-size: 72px;
   color: $orange-text;
+  line-height: 1;
 }
 
 .banner__desc {
   color: #fff;
-  font-size: 65px;
+  font-size: 55px;
   font-family: lifehack_medium;
-  line-height: 1.21;;
+  line-height: 1;
 }

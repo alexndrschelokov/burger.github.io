@@ -1,0 +1,11 @@
+.scroll-down-btn {
+  display: block;
+  position: absolute;
+  width: 29px;
+  height: 14px;
+  background: url(../../img/icons/scroll-down-btn.png) center center/contain no-repeat;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  outline: none;
+}
