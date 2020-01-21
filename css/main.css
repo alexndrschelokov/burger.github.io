@@ -556,6 +556,15 @@ a {
   background: #d7431b;
 }
 
+.button--color--black {
+  background: #2f3234;
+  color: #fff;
+  font-size: 13px;
+}
+.button--color--black:hover {
+  background: #232527;
+}
+
 .banner {
   display: flex;
   align-items: center;
@@ -697,5 +706,49 @@ a {
 
 .best__desc p {
   font-family: ubuntu_light;
+}
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.reviews__item {
+  position: relative;
+  width: 25%;
+  height: 50%;
+  background: center center/cover no-repeat;
+  filter: grayscale(1);
+}
+.reviews__item:hover .reviews__block {
+  opacity: 1;
+}
+
+.reviews__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(20, 20, 20, 0.6);
+  padding: 40px 23px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.reviews__title {
+  font-family: gagalin_regular;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.reviews__desc {
+  font-family: ubuntu_light;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.65;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

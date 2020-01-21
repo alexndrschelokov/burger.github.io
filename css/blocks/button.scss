@@ -18,3 +18,13 @@
     background: darken($orange, 5%);
   }
 }
+
+.button--color--black {
+  background: $black;
+  color: #fff;
+  font-size: 13px;
+
+  &:hover {
+    background: darken($black, 5%);
+  }
+}
